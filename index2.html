@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head> 
+<body>
+    
+    <!-- <div class="container">
+        <div class="modal fade" id="modalsample"
+        tabindex="-1"
+        aria-labelledby="modalsample"
+        aria-hidden="true"
+        data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Lorem, ipsum dolor.</h1>
+                        <button class="btn-close"
+                        type="button"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <input type="date" name="date" id="date">
+                                <input type="color" name="color" id="color">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                            </div>
+                            <div class="col-md-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eligendi tempore distinctio libero similique illum odit repudiandae quo modi officia! Maxime provident aliquid cum neque, reiciendis repudiandae. Esse, incidunt provident.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dager" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-info"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#modalsample">Open modal</button>
+    </div> -->
+
+    <button type="button" class="btn btn-success"
+    data-bs-toggle="modal"
+    data-bs-target="#modalsample"
+    data-bs-whatever="@mdo">Open modal for @mdo</button>
+
+    <button type="button" class="btn btn-success"
+    data-bs-toggle="modal"
+    data-bs-target="#modalsample"
+    data-bs-whatever="@fat">Open modal for @fat</button>
+
+    <button type="button" class="btn btn-success"
+    data-bs-toggle="modal"
+    data-bs-target="#modalsample"
+    data-bs-whatever="@mkd">Open modal for @mkd</button>
+
+    <div class="modal fade modal-fullscreen"
+    id="modalsample"
+    tabindex="-1"
+    aria-labelledby="modalsample"
+    aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">
+                        New message
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipint-name">Recipient:  </label>
+                            <input type="text" id="recipint-name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message: </label>
+                            <textarea id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var modalsample = document.getElementById('modalsample')
+    modalsample.addEventListener('show.bs.modal', function (event){
+        var button = event.relatedTarget
+        var recipient = button.getAttribute('data-bs-whatever')
+        var modalTitle = modalsample.querySelector('.modal-title')
+        var modalBodyInput = modalsample.querySelector('.modal-body input')
+
+        modalTitle.textContent = 'new message to ' + recipient
+        modalBodyInput.value = recipient
+    })
+</script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

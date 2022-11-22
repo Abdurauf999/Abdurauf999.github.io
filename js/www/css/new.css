@@ -1,0 +1,100 @@
+/* @import url('https://fonts.googleapis.com/css?
+ family-Poppins:200,300,400,500,600,700,800,900& display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2f363e;
+}
+
+.cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75), 10px 10px 70px rgba(0, 0, 0, 0.25);
+    inset: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    inset: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    inset: -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+
+.clock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 30px;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background-color: #2f363e;
+    inset: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    inset: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    inset: -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.clock span {
+    position: absolute;
+    color: white;
+    inset: 20px;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock span b {
+    font-size: 35px;
+    opacity: 0.25;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+circle i{
+    position: absolute;
+    width: 8px;
+    height: 50%;
+    background-color: red;
+}
+
+.circle2{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+}
+
+.circle3{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+}
