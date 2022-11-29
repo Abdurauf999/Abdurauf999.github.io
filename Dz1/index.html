@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <a href="#CollapseExample" type="button" data-bs-toggle="collapse" data-bs-target="#CollapseExample1"
+            class="btn btn-primary" aria-controls="CollapseExample1" aria-expanded="false">Переключатель первый</a>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#CollapseExample2"
+            aria-expanded="false" aria-controls="CollapseExample2">Переключатель второй</button>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+            aria-expanded="false" aria-controls="CollapseExample1 CollapseExample2">Переключатель оба</button>
+    </p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="collapse multi-collapse" id="CollapseExample1">
+                <div class="card card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque
+                    molestiae facere aperiam labore debitis nihil, totam ipsa ipsam dicta, qui aliquid sint similique
+                    blanditiis sit. Natus nam aut fugiat?</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="collapse multi-collapse" id="CollapseExample2">
+                <div class="card card-body">Aliquam nesciunt repudiandae id omnis temporibus deleniti quis eveniet
+                    itaque. Nulla dolorem suscipit dolor eos aliquid. Nulla nemo eius quis ipsam, reprehenderit eum,
+                    pariatur, cum consequatur cupiditate asperiores voluptates quae.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse" id="CollapseExample">
+        <div class="card card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dignissimos, ipsum praesentium dolore
+            blanditiis quos molestiae ab harum aspernatur, nobis accusamus inventore nemo asperiores, voluptatum tenetur
+            iusto suscipit adipisci pariatur?
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-lg btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a href="#" class="dropdown-item">Lorem, ipsum.</a></li>
+            <li><a href="#" class="dropdown-item">Adipisci, odit.</a></li>
+            <li><a href="#" class="dropdown-item">Recusandae, excepturi?</a></li>
+            <li><a href="#" class="dropdown-item">Repellendus, maiores.</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <ul class="list-group">
+
+                    <li class="list-group-item active">Lorem, ipsum.</li>
+                    <li class="list-group-item" aria-current="true">Quaerat, maxime!</li>
+                    <li class="list-group-item">Doloremque, sit.</li>
+                    <li class="list-group-item">Corporis, dolorem.</li>
+                    <li class="list-group-item">Architecto, dolor.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="list-group">
+
+                    <a href="" class="list-group-item list-group-item-active active">Lorem, ipsum.</a>
+                    <a href="" class="list-group-item list-group-item-active">Provident, doloribus.</a>
+                    <a href="" class="list-group-item list-group-item-active">Repudiandae, ducimus.</a>
+                    <a href="" class="list-group-item list-group-item-active">Praesentium, maiores?</a>
+                    <a href="" class="list-group-item list-group-item-active disabled">Quod, aut?</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <ol class="list-group list-group-numbered">
+
+                    <li class="list-group-item">Lorem, ipsum.</li>
+                    <li class="list-group-item">Quas, harum!</li>
+                    <li class="list-group-item">Architecto, ea?</li>
+                    <li class="list-group-item">Deleniti, rem?</li>
+                    <li class="list-group-item">Tempore, laudantium.</li>
+
+                </ol>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <ul class="list-group">
+
+                    <li class="list-group-item"><input type="checkbox" name="" id=""
+                            class="form-check-input me-1">Lorem, ipsum.</li>
+                    <li class="list-group-item"><input type="checkbox" name="" id=""
+                            class="form-check-input me-1">Lorem, ipsum.</li>
+                    <li class="list-group-item"><input type="checkbox" name="" id=""
+                            class="form-check-input me-1">Lorem, ipsum.</li>
+                    <li class="list-group-item"><input type="checkbox" name="" id=""
+                            class="form-check-input me-1">Lorem, ipsum.</li>
+                    <li class="list-group-item"><input type="checkbox" name="" id=""
+                            class="form-check-input me-1">Lorem, ipsum.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+<script src="../js/bootstrap.js"></script>
+
+</html>
